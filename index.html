@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktails API</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+      <form class="search-form">
+        <h2>cocktails</h2>
+        <input
+          type="text"
+          placeholder="search your favorite cocktail"
+          name="drink"
+        />
+      </form>
+    <section class="section cocktails">
+      <article class="loading">
+        <img src="images/wine-loading.gif" alt="loading" />
+        <h3>Searching cocktails...</h3>
+      </article>
+      <h2 class="title hide"></h2>
+      <!-- cocktails -->
+      <div class="section-center"></div>
+    </section>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
