@@ -5,7 +5,6 @@ import './utils/searchDrinks.js'
 
 window.addEventListener("DOMContentLoaded", () => {
     showDrinks(URL);
-    
 });
 
 
