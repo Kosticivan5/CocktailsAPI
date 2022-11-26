@@ -7,7 +7,8 @@ const displayDrink = (data)=>{
   console.log(drink);
   const {strDrink:name, strDrinkThumb:img,strInstructions:recipe} = drink
 
-    const drinkContainer = get('.drink-container');
+  const link = document.querySelector("link[rel~='icon']");
+  console.log(link);
     const title = get('.desc__title');
     const ingredients = get('.ing');
     const recipes = get('.desc__recepie');
@@ -31,6 +32,7 @@ const displayDrink = (data)=>{
   title.textContent = name;
   recipes.textContent = recipe;
   image.src = img
+  link.href = img
 
 
 }

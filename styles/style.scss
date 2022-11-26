@@ -45,30 +45,20 @@ body {
 
 // preloader
 .loading {
-  // width: 100px;
-  // height: 100px;
-  // margin: 15px auto;
-  // text-align: center;
-  width: 100%;
-    height: 100vh;
-    background-color: $background;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-content: center;
-    text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 15px auto;
+  text-align: center;
   img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 50%;
   }
+ 
 }
 
-.hide {
-  display: none;
-}
+
 
 // title
 .title {
@@ -78,8 +68,11 @@ body {
   font-family: "Black Ops One", cursive;
   text-transform: capitalize;
   padding: 50px 0;
+  
 }
-
+.hide {
+  display: none;
+}
 // center section
 
 .section-center {
@@ -90,6 +83,9 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
+    &.hide{
+      display: none;
+    }
   a {
     text-decoration: none;
     color: $textColor;

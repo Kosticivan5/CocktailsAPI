@@ -14,8 +14,7 @@ const displayDrinks = ({drinks})=>{
     sectionCenter.innerHTML = null
     return;
   }
-
-  
+  // sectionCenter.classList.remove('hide')
     const data = drinks
     .map((drink) => {
       const { idDrink: id, strDrink: title, strDrinkThumb: img } = drink;
@@ -29,6 +28,7 @@ const displayDrinks = ({drinks})=>{
     .join("");
     hideLoading()
     title.classList.add('hide')
+    sectionCenter.classList.remove('hide')
     sectionCenter.innerHTML = data;
     return sectionCenter;
   

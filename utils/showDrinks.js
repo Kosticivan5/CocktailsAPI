@@ -9,7 +9,9 @@ showLoading()
   const data = await getDrinks(url)
   
   // display cocktails
+
   const section = await displayDrinks(data)
+  
   // console.log(section);
   if (section){
     setDrink(section)
