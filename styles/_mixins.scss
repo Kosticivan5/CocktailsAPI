@@ -1,0 +1,14 @@
+@mixin flex($ai, $jc, $dir) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $dir;
+  }
+  
+  @mixin bgAlign($url) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(2, 2, 2, 0.45)),
+      url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

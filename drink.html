@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Drink</title>
+    <link rel="stylesheet" href="styles/singleDrink.css">
 </head>
 <body>
-    Single Drink
+    <div class="drink-container">
+        <article class="loading">
+            <img src="images/wine-loading.gif" alt="loading" />
+            <h3>Loading Cocktail...</h3>
+          </article>
+        <img src="./images/cocktail.jpg" alt="" class="drink-img">
+        <article class="desc">
+            <h2 class="desc__title">Margarita</h2>
+            <div class="desc__ingredients">
+                <h3>Ingredients :</h3>
+                <ul class="ing">
+                    <li>ingredient 1</li>
+                    <li>ingredient 2</li>
+                    <li>ingredient 3</li>
+                </ul>
+            </div>
+            
+            <div class="desc__recepie">
+                <h3>Recipe :</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae libero neque ad sint unde numquam nemo accusamus quaerat repellendus rem ipsam reiciendis magni voluptates autem, cumque repellat deserunt! Repellat, magnam.</p>
+            </div>
+            <a href="./index.html" class="back-btn">all cocktails</a>
+        </article>
+    </div>
+    <script type="module" src="./singleDrink.js"></script>
 </body>
 </html>
